@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
       preloader.style.display = 'none';
       const mainContent = document.getElementById('main-content');
       mainContent.style.display = 'block';
-    }, 3000);
+    }, 1000);
 });
 
 const menuBtn = document.getElementById('menu-btn');
