@@ -1,11 +1,11 @@
-/*window.addEventListener('load', function () {
+window.addEventListener('load', function () {
     setTimeout(function () {
       const preloader = document.getElementById('preloader');
       preloader.style.display = 'none';
       const mainContent = document.getElementById('main-content');
       mainContent.style.display = 'block';
-    }, 1000);
-});*/
+    }, 3000);
+});
 
 const menuBtn = document.getElementById('menu-btn');
 const dropdown = document.getElementById('dropdown');
