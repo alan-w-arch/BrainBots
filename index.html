@@ -8,7 +8,47 @@
     <link rel="stylesheet" href="dist/output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        theme: {
+            screens: {
+              sm: '480px',
+              md: '768px',
+              lg: '976px',
+              xl: '1440px',
+            },
+            colors: {
+              'blue': '#12D2FF',
+              'white':'#ffffff',
+              'dull': '#F5F5F5',
+              'black': '#000000',
+              'orange': '#ff7849',
+              'green': '#13ce66',
+              'yellow': '#ffc82c',
+              'gray-dark': '#273444',
+              'gray': '#707070',
+              'gray-light': '#d3dce6',
+              'bunting': {
+                  '50': '#edf6ff',
+                  '100': '#d6eaff',
+                  '200': '#b6dbff',
+                  '300': '#84c7ff',
+                  '400': '#4ba7ff',
+                  '500': '#2181ff',
+                  '600': '#0a5eff',
+                  '700': '#0347f2',
+                  '800': '#0a39c3',
+                  '900': '#0f3699',
+                  '950': '#0a142c',
+                },
+            },
+            fontFamily: {
+              sans: ['Graphik', 'sans-serif'],
+              serif: ['Merriweather', 'serif'],
+            },
+            extend: {},
+          }
+    </script>
 </head>
 <body>
     <div id="preloader">
