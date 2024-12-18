@@ -8,63 +8,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/output.css">
     <script src="JS/scripts.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Prosto+One&display=swap" rel="stylesheet"> 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        theme: {
-            screens: {
-              sm: '480px',
-              md: '768px',
-              lg: '976px',
-              xl: '1440px',
-            },
-            colors: {
-              'blue': '#12D2FF',
-              'white':'#ffffff',
-              'dull': '#F5F5F5',
-              'black': '#000000',
-              'orange': '#ff7849',
-              'green': '#13ce66',
-              'yellow': '#ffc82c',
-              'gray-dark': '#273444',
-              'gray': '#707070',
-              'gray-light': '#d3dce6',
-              'bunting': {
-                  '50': '#edf6ff',
-                  '100': '#d6eaff',
-                  '200': '#b6dbff',
-                  '300': '#84c7ff',
-                  '400': '#4ba7ff',
-                  '500': '#2181ff',
-                  '600': '#0a5eff',
-                  '700': '#0347f2',
-                  '800': '#0a39c3',
-                  '900': '#0f3699',
-                  '950': '#0a142c',
-                },
-            },
-            fontFamily: {
-              sans: ['Graphik', 'sans-serif'],
-              serif: ['Merriweather', 'serif'],
-            },
-            extend: {},
-          }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Prosto+One&display=swap" rel="stylesheet">  
 </head>
 <body>
     <div id="preloader">
-        <dotlottie-player 
-          src="https://lottie.host/bfbb97c1-93ba-47cd-ab79-9c888a744952/MIWRoCnV3Y.lottie" 
-          background="transparent" 
-          speed="1" 
-          style="width: 300px; height: 300px" 
-          loop 
-          autoplay>
-        </dotlottie-player>
+        <div class="max-w-[60%] flex justify-center">
+          <img src="SRC/Preloder.gif" alt="Preloder robot">
+        </div>
     </div>
     
     <!-- Main Content -->
@@ -107,9 +60,14 @@
         </nav>
         <section id="Home" class="h-screen bg-bunting-950 flex flex-col md:flex-row items-center justify-center">
             <!-- Animation Section -->
-            <div class="w-full md:w-1/2 flex justify-center md:justify-center items-center h-full md:h-auto">
-              <img class="pl-8 pt-8 h-[90%] w-[80%]" src="SRC/mainWithBg.gif" alt="">
+           <!-- Image Section -->
+            <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
+              <img 
+                class="h-auto w-[90%] max-w-full rounded-lg" 
+                src="SRC/mainWithBg.gif" 
+                alt="Empowering Students in Robotics and AI">
             </div>
+
         
             <!-- Welcome Message Section -->
             <div 
@@ -125,48 +83,81 @@
         </section>
 
         <!--2nd services-->
-        <section id="Services" class="h-[150%] bg-[#EAF4FB] flex flex-col md:flex-row items-center justify-center">
-          <!-- Animation Section -->
-          <div class="max-w-fit h-[80%]  md:w-1/2 relative rounded-lg p-6 md:h-full sm:p-8 mx-6 md:mx-0 text-center md:text-left flex flex-col justify-center ">
-            <div class="absolute inset-0 w-auto"></div>
-            <div class="relative pl-12 z-10 text-justify pr-8">
-              <h3><blockquote class="mb-4 text-4xl text-blue">Empowering Students to Innovate and Excel in Robotics & AI</blockquote></h3>
-              <p class="text-lg text-bunting-950 text-justify">BrainBots offers a range of services designed to make robotics and AI education practical and engaging for students. Our programs include:</p>
-              <h2 class="text-3xl font-bold my-6 text-center md:text-left">What We Offer:</h2>
-              <dl class="space-y-4">
+        <section id="Services" class="bg-[#EAF4FB] flex flex-col-reverse lg:flex-row items-center justify-center md:pl-8 py-8 md:py-16">
+          <!-- Text Section -->
+          <div class="w-full lg:w-1/2 px-6 sm:px-8 text-center lg:text-left flex flex-col justify-center">
+            <h3>
+              <blockquote class="mb-4 text-4xl text-blue">
+                Empowering Students to Innovate and Excel in Robotics & AI
+              </blockquote>
+            </h3>
+            <p class="text-lg text-bunting-950 text-justify">
+              BrainBots offers a range of services designed to make robotics and AI education practical and engaging for students. Our programs include:
+            </p>
+            <h2 class="text-3xl font-bold my-6">What We Offer:</h2>
+            <dl class="space-y-6">
+              <div>
                 <dt class="text-lg font-bold text-bunting-950">Future-Ready Curriculum</dt>
-                <dd class="text-lg text-bunting-950 text-justify">Seamlessly integrate robotics and AI into your school's syllabus with a program customized for real-world applications.</dd>
-              
+                <dd class="text-lg text-bunting-950 text-justify">
+                  Seamlessly integrate robotics and AI into your school's syllabus with a program customized for real-world applications.
+                </dd>
+              </div>
+              <div>
                 <dt class="text-lg font-bold text-bunting-950">Interactive Live Classes</dt>
-                <dd class="text-lg text-bunting-950 text-justify">Professional instructors deliver hands-on sessions, combining engaging theory with impactful practical learning.</dd>
-              
+                <dd class="text-lg text-bunting-950 text-justify">
+                  Professional instructors deliver hands-on sessions, combining engaging theory with impactful practical learning.
+                </dd>
+              </div>
+              <div>
                 <dt class="text-lg font-bold text-bunting-950">No Extra Costs – Free Kits & Tools</dt>
-                <dd class="text-lg text-bunting-950 text-justify">Empower your students to innovate with our complimentary, high-quality kits and materials.</dd>
-              
+                <dd class="text-lg text-bunting-950 text-justify">
+                  Empower your students to innovate with our complimentary, high-quality kits and materials.
+                </dd>
+              </div>
+              <div>
                 <dt class="text-lg font-bold text-bunting-950">Global Stage Opportunities</dt>
-                <dd class="text-lg text-bunting-950 text-justify">Prepare students to excel in prestigious national and international competitions, showcasing their skills on the biggest platforms.</dd>
-              
+                <dd class="text-lg text-bunting-950 text-justify">
+                  Prepare students to excel in prestigious national and international competitions, showcasing their skills on the biggest platforms.
+                </dd>
+              </div>
+              <div>
                 <dt class="text-lg font-bold text-bunting-950">Real-World Industry Exposure</dt>
-                <dd class="text-lg text-bunting-950 text-justify">Offer your students invaluable insights into robotics and AI with guided visits to leading industries.</dd>
-              
+                <dd class="text-lg text-bunting-950 text-justify">
+                  Offer your students invaluable insights into robotics and AI with guided visits to leading industries.
+                </dd>
+              </div>
+              <div>
                 <dt class="text-lg font-bold text-bunting-950">Teacher Empowerment</dt>
-                <dd class="text-lg text-bunting-950 text-justify">Equip your educators with expert training to implement cutting-edge robotics programs with confidence and ease.</dd>
-              </dl>
-            </div>
+                <dd class="text-lg text-bunting-950 text-justify">
+                  Equip your educators with expert training to implement cutting-edge robotics programs with confidence and ease.
+                </dd>
+              </div>
+            </dl>
           </div>
-      
-          <!-- Welcome Message Section -->
-          <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center md:justify-center items-center h-full md:h-auto">
-            <img class=" pt-8 h-[90%] w-[80%]" src="SRC/mainWithBg.gif" alt="">
+        
+          
+          <!-- Image Section -->
+          <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
+            <img 
+              class="h-auto w-[90%] max-w-full rounded-lg" 
+              src="SRC/serv1.gif" 
+              alt="Empowering Students in Robotics and AI">
           </div>
-      </section>
 
+        </section>
+        
+        
       <!--3rd section service also -->
       <section class="h-[150%] bg-dull flex flex-col md:flex-row items-center justify-center">
-        <!-- Animation Section -->
-        <div class="w-full md:w-1/2 flex justify-center md:justify-center items-center h-full md:h-auto">
-          <img class="pl-8 pt-8 h-[90%] w-[80%]" src="SRC/mainWithBg.gif" alt="">
+        <!-- Image Section -->
+        <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
+          <img 
+            class="h-auto w-[90%] max-w-full rounded-lg" 
+            src="SRC/serv2.gif" 
+            alt="Empowering Students in Robotics and AI">
         </div>
+
+
     
         <!-- Welcome Message Section -->
         <div 
@@ -195,38 +186,56 @@
               <dt class="text-lg font-bold text-bunting-950">Real-World Exposure</dt>
               <dd class="text-lg text-bunting-950 text-justify">Industry visits and insights bridge the gap between learning and application, inspiring students to see the possibilities in robotics and AI.</dd>
             </dl>
-            <p class="text-lg text-bunting-500 text-justify">Join the growing community of schools choosing BrainBots to inspire tomorrow’s innovators today!</p>
+            <p class="text-lg text-bunting-950 text-justify">Join the growing community of schools choosing BrainBots to inspire tomorrow’s innovators today!</p>
         </div>
         </div>
       </section>
 
 
-      <section id="Services" class="w-full bg-dull text-bunting-950 py-12 px-6 md:px-16">
-        <h3><blockquote class="mb-4 text-4xl text-blue">Why Schools Love BrainBots ?</blockquote></h3>
-        <p class="text-lg text-bunting-950 text-justify">Partnering with BrainBots transforms education into an engaging, future-ready experience by offering: </p>
+      <section class="w-full bg-dull text-bunting-950 py-12 px-6 md:px-16">
+        <h3>
+          <blockquote class="mb-4 text-4xl text-blue">Why Schools Love BrainBots?</blockquote>
+        </h3>
+        <p class="text-lg text-bunting-950 text-justify">Partnering with BrainBots transforms education into an engaging, future-ready experience by offering:</p>
         <div class="grid grid-cols-2 gap-4 mt-8">
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue">
+          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+            <span class="mr-2">
+              <img class="h-6 w-6" src="SRC/Affordable.png" alt="Affordable Icon">
+            </span>
             <h3 class="font-bold text-lg text-center">Affordable, high-quality robotics and AI programs</h3>
           </div>
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue">
+          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+            <span class="mr-2">
+              <img class="h-6 w-6" src="SRC/expert led.png" alt="Kits Icon">
+            </span>
             <h3 class="font-bold text-lg text-center">Hands-on kits and expert-led live classes</h3>
           </div>
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue">
+          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+            <span class="mr-2">
+              <img class="h-6 w-6" src="SRC/global exposure.png" alt="Competitions Icon">
+            </span>
             <h3 class="font-bold text-lg text-center">Opportunities for global recognition through competitions</h3>
           </div>
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue">
+          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+            <span class="mr-2">
+              <img class="h-6 w-6" src="SRC/industry visit.png" alt="Industry Icon">
+            </span>
             <h3 class="font-bold text-lg text-center">Real-world exposure via industry visits</h3>
           </div>
         </div>
         <div class="flex justify-center mt-4">
           <div class="w-full grid grid-cols gap-4">
-            <div class="mx-60 border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue">
+            <div 
+              class="border border-blue rounded-tl-3xl rounded-br-3xl lg:pr-64 p-4 hover:bg-blue sm:mx-4 md:mx-8 lg:mx-60 xl:mx-auto flex items-center">
+              <span class="mr-2">
+                <img class="h-6 w-6" src="SRC/inspire.png" alt="Tailored Icon">
+              </span>
               <h3 class="font-bold text-lg text-center">Tailored programs that inspire students to lead in innovation</h3>
             </div>
           </div>
         </div>
-        
       </section>
+      
 
 
       <section id="About" class="relative w-full h-full bg-[#EAF4FB]">
@@ -275,23 +284,29 @@
             <h1 class="relative text-4xl font-bold text-bunting-950 p-8">ABOUT US</h1>
           </div>
         </div>
+
+        <div class="w-[90%] ml-[10%] h-1 bg-blue"></div>
       </section>
       
       
 
 
-      <section class="h-screen bg-[#EAF4FB] text-bunting-950 flex flex-col md:flex-row items-center">
-        <div class="w-full md:w-[60%] flex justify-center mt-8 md:mt-0">
-          <iframe
-            class="rounded-lg shadow-lg w-full h-[200px] md:w-[560px] md:h-[315px]"
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+      <section class="h-fit bg-[#EAF4FB] text-bunting-950 flex items-center justify-center">
+        <div class="w-full flex justify-center mx-60 my-20">
+          <div class="relative w-full max-w-[64%] aspect-[16/9]">
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </section>
+      
+      
 
 
       <section id="Contact" class="w-full bg-blue py-12 rounded-r-3xl mr-4 md:rounded-tr-full">
