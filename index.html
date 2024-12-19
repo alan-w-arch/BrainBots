@@ -5,351 +5,379 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BrainBots provides affordable robotics and AI education, tailored for schools with hands-on learning, expert guidance, free kits, and global competition preparation.">
     <meta name="keywords" content="Robotics education, AI learning for schools, Affordable robotics courses, Hands-on robotics kits, In-person robotics instruction, Robotics competitions for students, AI skills development for students, Engaging STEM curriculum, Robotics for beginners, Robotics and AI programs for schools, Free robotics kits for students, Robotics and AI learning at an affordable price, Educational robotics solutions, National and international robotics competitions, Hands-on AI learning experience">
-    <title>Document</title>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="BrainBots">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Brainbots",
+        "url": "https://www.brainbots.in/",
+        "logo": "https://www.brainbots.in/SRC/logoWithText.png",
+        "description": "Brainbots specializes in providing hands-on robotics and AI learning experiences for students. Offering free kits, expert instruction, and opportunities to participate in global competitions, Brainbots is revolutionizing education in robotics and AI.",
+        "founders": [
+          {
+            "@type": "Person",
+            "name": "Nalle Veera Rama Teja"
+          },
+          {
+            "@type": "Person",
+            "name": "Palvai Manoj Kumar"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500035",
+          "addressCountry": "India"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9505563344",
+          "email": "brainbots.info@gmail.com",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/brainbots",
+          "https://www.instagram.com/brainbotsedu"
+        ]
+      }
+    </script>
+    <link rel="icon" href="SRC/foot.svg">
+    <title>BrainBots</title>
+    <link rel="canonical" href="https://www.brainbots.in/">
     <link rel="stylesheet" href="dist/output.css">
     <script src="JS/scripts.js"></script>
     <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Prosto+One&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        theme: {
-            screens: {
-              sm: '480px',
-              md: '768px',
-              lg: '976px',
-              xl: '1440px',
-            },
-            colors: {
-              'blue': '#12D2FF',
-              'white':'#ffffff',
-              'dull': '#F5F5F5',
-              'black': '#000000',
-              'orange': '#ff7849',
-              'green': '#13ce66',
-              'yellow': '#ffc82c',
-              'gray-dark': '#273444',
-              'gray': '#707070',
-              'gray-light': '#d3dce6',
-              'bunting': {
-                  '50': '#edf6ff',
-                  '100': '#d6eaff',
-                  '200': '#b6dbff',
-                  '300': '#84c7ff',
-                  '400': '#4ba7ff',
-                  '500': '#2181ff',
-                  '600': '#0a5eff',
-                  '700': '#0347f2',
-                  '800': '#0a39c3',
-                  '900': '#0f3699',
-                  '950': '#0a142c',
-                },
-            },
-            fontFamily: {
-              sans: ['Graphik', 'sans-serif'],
-              serif: ['Merriweather', 'serif'],
-            },
-            extend: {},
-          }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Prosto+One&display=swap" rel="stylesheet">  
 </head>
 <body>
+    <!--Preloader-->
     <div id="preloader">
-        <div class="max-w-[60%] flex justify-center">
-          <img src="SRC/mainWithBg.gif" alt="Preloder robot">
+        <div class="max-w-[20%] flex justify-center">
+          <img src="SRC/Preloder.gif" alt="Preloder robot">
         </div>
     </div>
-    
+  
     <!-- Main Content -->
     <div id="main-content">
         <div class="prenav">
           <blockquote class="text-xl text-bunting-950 bg-blue text-center">Empowering Young Minds with Robotics and AI – Affordable, Accessible, Innovative.</blockquote>
         </div>
-        <nav id="navbar" class="bg-bunting-950 text-bunting-100 py-4 transition-padding sticky top-0 z-50">
+        <nav id="navbar" class="bg-white text-bunting-100 py-4 transition-padding sticky top-0 z-50">
             <div class="flex items-center justify-between px-4 md:px-8 lg:px-10 xl:px-15 overflow-hidden">
               <!-- Logo -->
               <div class="flex-shrink-0">
                 <img id="logo" src="SRC/logoWithText.png" alt="Company Logo" class="h-12 w-auto">
               </div>
-        
               <!-- Hamburger Menu Button (Small Screens) -->
               <button id="menu-btn" class="text-bunting-100 md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
               </button>
-        
               <!-- Links -->
               <ul id="menu" class="hidden md:flex items-center space-x-12 pr-[3%]">
-                <li><a href="#Home" class="text-lg text-white hover:text-blue transition">Home</a></li>
-                <li><a href="#Services" class="text-lg text-white hover:text-blue transition">Services</a></li>
-                <li><a href="#About" class="text-lg text-white hover:text-blue transition">About</a></li>            
-                <li><a href="#Contact" class="text-lg text-white hover:text-blue transition">Contact</a></li>
+                <li><a href="#Home" class="text-lg text-bunting-950 hover:text-blue transition">Home</a></li>
+                <li><a href="#Services" class="text-lg text-bunting-950 hover:text-blue transition">Services</a></li>
+                <li><a href="#About" class="text-lg text-bunting-950 hover:text-blue transition">About</a></li>            
+                <li><a href="#Contact" class="text-lg text-bunting-950 hover:text-blue transition">Contact</a></li>
               </ul>
             </div>
-        
             <!-- Dropdown Menu for Small Screens -->
-            <div id="dropdown" class="hidden bg-bunting-950 text-bunting-100 px-4 md:hidden">
+            <div id="dropdown" class="hidden bg-white text-bunting-100 px-4 md:hidden">
               <ul class="space-y-4 py-4">
-                <li><a href="#Home" class="block text-white hover:text-blue transition">Home</a></li>
-                <li><a href="#Services" class="block text-white hover:text-blue transition">Services</a></li>
-                <li><a href="#About" class="block text-white hover:text-blue transition">About</a></li>
-                <li><a href="#Contact" class="block text-white hover:text-blue transition">Contact</a></li>
+                <li><a href="#Home" class="block text-bunting-950 hover:text-blue transition">Home</a></li>
+                <li><a href="#Services" class="block text-bunting-950 hover:text-blue transition">Services</a></li>
+                <li><a href="#About" class="block text-bunting-950 hover:text-blue transition">About</a></li>
+                <li><a href="#Contact" class="block text-bunting-950 hover:text-blue transition">Contact</a></li>
               </ul>
             </div>
         </nav>
-        <section id="Home" class="h-screen bg-bunting-950 flex flex-col md:flex-row items-center justify-center">
-            <!-- Animation Section -->
-           <!-- Image Section -->
-            <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
-              <img 
-                class="h-auto w-[90%] max-w-full rounded-lg" 
-                src="SRC/mainWithBg.gif" 
-                alt="Empowering Students in Robotics and AI">
-            </div>
 
-        
-            <!-- Welcome Message Section -->
-            <div 
+        <!--Home section-->
+        <section id="Home" class="h-screen bg-white flex md:pb-40 flex-col md:flex-row items-center justify-center overflow-hidden">
+          <!-- Image Section -->
+          <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
+            <img 
+              class="h-auto w-[90%] max-w-full rounded-lg" 
+              src="SRC/1.svg" 
+              alt="Empowering Students in Robotics and AI">
+          </div>
+          <!-- Welcome Message Section -->
+          <div 
             id="welcomeMessage"
-            class="max-w-fit h-[80%]  md:w-1/2 relative rounded-lg p-6 md:h-full sm:p-8 mx-6 md:mx-0 text-center md:text-left flex flex-col justify-center">
+            class="max-w-full h-[80%] md:w-1/2 relative rounded-lg md:h-full px-6 sm:px-4 md:px-8 mx-4 md:mx-0 text-center md:text-left flex flex-col justify-center overflow-hidden">
             <div class="absolute inset-0 w-auto"></div>
-            <div class="relative z-10 text-justify pr-8">
-                <h1 id="brainbots" class="text-[10rem] sm:text-[80px] bold text-blue">BrainBots</h1>
-                <h3><blockquote class="mb-4 text-4xl text-blue">"Robotics Made Real for Every Student."</blockquote></h3>
-                <p class="text-lg text-white text-justify">We specialize in providing hands-on robotics and AI learning experiences tailored for schools at an affordable cost. Our unique approach combines expert in-person instruction, engaging curriculum, and free kits to empower students with the skills needed for tomorrow. At BrainBots, we go beyond classrooms, inspiring students to participate in national and international competitions, ensuring they stand out globally. Join us in revolutionizing education and shaping the leaders of the future!</p>
+            <div class="relative z-10 text-justify">
+              <div class="typewriter-wrapper">
+                <h1 id="brainbots" class="h1-typewriter text-[3rem] sm:text-[4rem] md:text-[4rem] lg:text-[5rem] xl:text-[5rem] font-bold text-blue transition ease-in-out">
+                  BrainBots
+                </h1>
+                <h3>
+                  <blockquote class="blockquote-typewriter mb-4 text-2xl sm:text-3xl md:text-4xl text-blue">
+                    "Robotics Made Real for Every Student."
+                  </blockquote>
+                </h3>
+              </div>
+              <p class="text-base sm:text-lg md:text-lg lg:text-xl text-bunting-950">
+                We specialize in providing hands-on robotics and AI learning experiences tailored for schools at an affordable cost. 
+                Our unique approach combines expert in-person instruction, engaging curriculum, and free kits to empower students 
+                with the skills needed for tomorrow. At BrainBots, we go beyond classrooms, inspiring students to participate in national 
+                and international competitions, ensuring they stand out globally. Join us in revolutionizing education and shaping the 
+                leaders of the future!
+              </p>
             </div>
-            </div>
+          </div>
         </section>
-
-        <!--2nd services-->
-        <section id="Services" class="bg-[#EAF4FB] flex flex-col-reverse lg:flex-row items-center justify-center md:pl-8 py-8 md:py-16">
-          <!-- Text Section -->
-          <div class="w-full lg:w-1/2 px-6 sm:px-8 text-center lg:text-left flex flex-col justify-center">
+        
+        <!--1st services section-->
+        <div id="Services" class="bg-white h-fit pt-8 md:pt-16">
+          <div>
             <h3>
-              <blockquote class="mb-4 text-4xl text-blue">
+              <blockquote class="mb-4 text-5xl text-blue text-center">
                 Empowering Students to Innovate and Excel in Robotics & AI
               </blockquote>
             </h3>
-            <p class="text-lg text-bunting-950 text-justify">
+          </div>
+          <div>
+            <p class="text-lg text-bunting-950 text-center">
               BrainBots offers a range of services designed to make robotics and AI education practical and engaging for students. Our programs include:
             </p>
-            <h2 class="text-3xl font-bold my-6">What We Offer:</h2>
+          </div>
+        </div>
+        <section class="bg-white flex flex-col-reverse lg:flex-row items-center justify-center md:pl-8 pb-8 md:pb-16">
+          <!-- Text Section -->
+          <div class="w-full lg:w-1/2 px-6 sm:px-8 text-center lg:text-left flex flex-col justify-center">
+            
+            <h2 class="text-3xl text-bunting-950 font-bold my-6">What We Offer:</h2>
             <dl class="space-y-6">
               <div>
-                <dt class="text-lg font-bold text-bunting-950">Future-Ready Curriculum</dt>
+                <dt class="text-lg font-bold text-blue">Future-Ready Curriculum</dt>
                 <dd class="text-lg text-bunting-950 text-justify">
                   Seamlessly integrate robotics and AI into your school's syllabus with a program customized for real-world applications.
                 </dd>
               </div>
               <div>
-                <dt class="text-lg font-bold text-bunting-950">Interactive Live Classes</dt>
+                <dt class="text-lg font-bold text-blue">Interactive Live Classes</dt>
                 <dd class="text-lg text-bunting-950 text-justify">
                   Professional instructors deliver hands-on sessions, combining engaging theory with impactful practical learning.
                 </dd>
               </div>
               <div>
-                <dt class="text-lg font-bold text-bunting-950">No Extra Costs – Free Kits & Tools</dt>
+                <dt class="text-lg font-bold text-blue">No Extra Costs – Free Kits & Tools</dt>
                 <dd class="text-lg text-bunting-950 text-justify">
                   Empower your students to innovate with our complimentary, high-quality kits and materials.
                 </dd>
               </div>
               <div>
-                <dt class="text-lg font-bold text-bunting-950">Global Stage Opportunities</dt>
+                <dt class="text-lg font-bold text-blue">Global Stage Opportunities</dt>
                 <dd class="text-lg text-bunting-950 text-justify">
                   Prepare students to excel in prestigious national and international competitions, showcasing their skills on the biggest platforms.
                 </dd>
               </div>
               <div>
-                <dt class="text-lg font-bold text-bunting-950">Real-World Industry Exposure</dt>
+                <dt class="text-lg font-bold text-blue">Real-World Industry Exposure</dt>
                 <dd class="text-lg text-bunting-950 text-justify">
                   Offer your students invaluable insights into robotics and AI with guided visits to leading industries.
                 </dd>
               </div>
               <div>
-                <dt class="text-lg font-bold text-bunting-950">Teacher Empowerment</dt>
+                <dt class="text-lg font-bold text-blue">Teacher Empowerment</dt>
                 <dd class="text-lg text-bunting-950 text-justify">
                   Equip your educators with expert training to implement cutting-edge robotics programs with confidence and ease.
                 </dd>
               </div>
             </dl>
           </div>
-        
-          
           <!-- Image Section -->
           <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
             <img 
-              class="h-auto w-[90%] max-w-full rounded-lg" 
-              src="SRC/mainWithBg.gif" 
+              class="h-auto w-[90%] max-w-full rounded-lg bg-white" 
+              src="SRC/2.svg" 
               alt="Empowering Students in Robotics and AI">
           </div>
-
         </section>
         
-        
-      <!--3rd section service also -->
-      <section class="h-[150%] bg-dull flex flex-col md:flex-row items-center justify-center">
+        <!--2nd service section -->
+        <div class="bg-white h-fit pt-8 md:pt-16">
+          <div>
+            <h3>
+              <blockquote class="mb-4 text-5xl text-blue text-center">
+                Why Schools Choose BrainBots ?
+              </blockquote>
+            </h3>
+          </div>
+          <div>
+            <p class="text-lg text-bunting-950 text-center">
+              At BrainBots, we bring the future of education into your classrooms. Here's what sets us apart: 
+            </p>
+          </div>
+        </div>
+      <section class="h-[150%] bg-white flex flex-col md:flex-row items-center justify-center">
         <!-- Image Section -->
         <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
           <img 
             class="h-auto w-[90%] max-w-full rounded-lg" 
-            src="SRC/mainWithBg.gif" 
+            src="SRC/3.svg" 
             alt="Empowering Students in Robotics and AI">
         </div>
-
-
-    
         <!-- Welcome Message Section -->
         <div 
         id="welcomeMessage"
         class="max-w-fit h-[80%]  md:w-1/2 relative rounded-lg p-6 md:h-full sm:p-8 mx-6 md:mx-0 text-center md:text-left flex flex-col justify-center">
         <div class="absolute inset-0 w-auto"></div>
         <div class="relative z-10 text-justify pr-8">
-            <h3><blockquote class="mb-4 text-4xl text-blue">Why institutions Choose BrainBots ?</blockquote></h3>
-            <p class="text-lg text-bunting-950 text-justify">At BrainBots, we bring the future of education into your classrooms. Here's what sets us apart: </p>
+            
             <dl class="space-y-4">
-              <dt class="text-lg font-bold text-bunting-950">Affordable and Inclusive Learning</dt>
+              <dt class="text-lg font-bold text-blue">Affordable and Inclusive Learning</dt>
               <dd class="text-lg text-bunting-950 text-justify">We make cutting-edge robotics and AI education accessible to schools of all sizes, ensuring every student has the opportunity to innovate.</dd>
             
-              <dt class="text-lg font-bold text-bunting-950">Tailored Curriculum</dt>
+              <dt class="text-lg font-bold text-blue">Tailored Curriculum</dt>
               <dd class="text-lg text-bunting-950 text-justify">Our programs integrate seamlessly into your school’s syllabus, adapting to meet the specific needs of your students.</dd>
             
-              <dt class="text-lg font-bold text-bunting-950">Complimentary Kits & Materials</dt>
+              <dt class="text-lg font-bold text-blue">Complimentary Kits & Materials</dt>
               <dd class="text-lg text-bunting-950 text-justify">With BrainBots, students get hands-on experience without the burden of extra costs—everything they need is provided.</dd>
             
-              <dt class="text-lg font-bold text-bunting-950">Expert Guidance</dt>
+              <dt class="text-lg font-bold text-blue">Expert Guidance</dt>
               <dd class="text-lg text-bunting-950 text-justify">Our professional instructors make learning engaging with interactive classes, blending theory with real-world applications.</dd>
             
-              <dt class="text-lg font-bold text-bunting-950">Competitions & Global Recognition</dt>
+              <dt class="text-lg font-bold text-blue">Competitions & Global Recognition</dt>
               <dd class="text-lg text-bunting-950 text-justify">We prepare students to excel in national and international competitions, showcasing their skills on prestigious platforms.</dd>
             
-              <dt class="text-lg font-bold text-bunting-950">Real-World Exposure</dt>
+              <dt class="text-lg font-bold text-blue">Real-World Exposure</dt>
               <dd class="text-lg text-bunting-950 text-justify">Industry visits and insights bridge the gap between learning and application, inspiring students to see the possibilities in robotics and AI.</dd>
             </dl>
-            <p class="text-lg text-bunting-950 text-justify">Join the growing community of schools choosing BrainBots to inspire tomorrow’s innovators today!</p>
         </div>
         </div>
       </section>
+      <div class="bg-white">
+        <p class="text-lg text-blue text-center italic font-bold ">Join the growing community of schools choosing BrainBots to inspire tomorrow’s innovators today!</p>
+      </div>
 
-
-      <section class="w-full bg-dull text-bunting-950 py-12 px-6 md:px-16">
-        <h3>
-          <blockquote class="mb-4 text-4xl text-blue">Why Schools Love BrainBots?</blockquote>
-        </h3>
-        <p class="text-lg text-bunting-950 text-justify">Partnering with BrainBots transforms education into an engaging, future-ready experience by offering:</p>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+      <!--Service section 3-->
+      <div class="bg-white h-fit pt-8 md:pt-16">
+        <div>
+          <h3>
+            <blockquote class="mb-4 text-5xl text-blue text-center">
+              Why Schools Love BrainBots?
+            </blockquote>
+          </h3>
+        </div>
+        <div>
+          <p class="text-lg text-bunting-950 text-center">
+            Partnering with BrainBots transforms education into an engaging, future-ready experience by offering:
+          </p>
+        </div>
+      </div>
+      <section class="bg-white flex flex-col-reverse lg:flex-row items-center justify-center md:pl-8 pb-8 md:pb-16"> 
+        <div class="w-full text-bunting-950 lg:w-1/2 px-6 sm:px-8 text-center lg:text-left flex flex-col justify-center">
+          <div class="p-4 hover:bg-blue hover:rounded-full flex items-center">
             <span class="mr-2">
               <img class="h-6 w-6" src="SRC/Affordable.png" alt="Affordable Icon">
             </span>
-            <h3 class="font-bold text-lg text-center">Affordable, high-quality robotics and AI programs</h3>
+            <p class="font-bold text-lg text-center">Affordable, high-quality robotics and AI programs</p>
           </div>
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+          <div class="p-4 hover:bg-blue hover:rounded-full flex items-center">
             <span class="mr-2">
               <img class="h-6 w-6" src="SRC/expert led.png" alt="Kits Icon">
             </span>
-            <h3 class="font-bold text-lg text-center">Hands-on kits and expert-led live classes</h3>
+            <p class="font-bold text-lg text-center">Hands-on kits and expert-led live classes</p>
           </div>
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+          <div class="p-4 hover:bg-blue hover:rounded-full flex items-center">
             <span class="mr-2">
               <img class="h-6 w-6" src="SRC/global exposure.png" alt="Competitions Icon">
             </span>
-            <h3 class="font-bold text-lg text-center">Opportunities for global recognition through competitions</h3>
+            <p class="font-bold text-lg text-center">Opportunities for global recognition through competitions</p>
           </div>
-          <div class="border border-blue rounded-tl-3xl rounded-br-3xl p-4 hover:bg-blue flex items-center">
+          <div class="p-4 hover:bg-blue hover:rounded-full flex items-center">
             <span class="mr-2">
               <img class="h-6 w-6" src="SRC/industry visit.png" alt="Industry Icon">
             </span>
-            <h3 class="font-bold text-lg text-center">Real-world exposure via industry visits</h3>
+            <p class="font-bold text-lg text-center">Real-world exposure via industry visits</p>
+          </div>
+          <div class="p-4 hover:bg-blue hover:rounded-full flex items-center">
+            <span class="mr-2">
+              <img class="h-6 w-6" src="SRC/inspire.png" alt="Industry Icon">
+            </span>
+            <p class="font-bold text-lg text-center">Tailored programs that inspire students to lead in innovation</p>
           </div>
         </div>
-        <div class="flex justify-center mt-4">
-          <div class="w-full grid grid-cols gap-4">
-            <div 
-              class="border border-blue rounded-tl-3xl rounded-br-3xl lg:pr-64 p-4 hover:bg-blue sm:mx-4 md:mx-8 lg:mx-60 xl:mx-auto flex items-center">
-              <span class="mr-2">
-                <img class="h-6 w-6" src="SRC/inspire.png" alt="Tailored Icon">
-              </span>
-              <h3 class="font-bold text-lg text-center">Tailored programs that inspire students to lead in innovation</h3>
-            </div>
-          </div>
-        </div>
+        <!-- Image Section -->
+        <div id="welcomeMessage" class="w-full md:w-1/2 flex justify-center items-center pt-8 md:mb-0 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10">
+          <img 
+            class="h-fit w-full max-w-full rounded-lg bg-white" 
+            src="SRC/4.svg" 
+            alt="Empowering Students in Robotics and AI">
+        </div>  
       </section>
-      
 
+      <!--bg-[#EAF4FB]-->
 
-      <section id="About" class="relative w-full h-full bg-[#EAF4FB]">
+      <section id="About" class="relative w-full h-full bg-white">
         <!-- Responsive Layout -->
         <div class="flex flex-col md:flex-row md:items-stretch">
           <!-- Small Screen: About Us Heading First -->
           <div class="block md:hidden w-full py-4 px-6 text-center bg-blue rounded-br-full">
             <h1 class="text-4xl font-bold text-bunting-950">ABOUT US</h1>
           </div>
-      
           <!-- Left Side -->
           <div class="w-full md:w-[60%] lg:w-2/3 py-8 px-[15%] space-y-6">
             <!-- Meet Our Founders -->
             <div>
               <h2 class="hidden md:block text-3xl font-bold mb-6 py-4 text-bunting-950">
-                Meet our <br><span class="text-blue">FOUNDERS</span>
+                Meet our  <span class="text-blue md:text-4xl">FOUNDERS</span>
               </h2>
               <div class="grid grid-cols-1 py-4 sm:grid-cols-2 gap-6">
                 <!-- Founder 1 Card -->
-                <div class="bg-dull w-full border rounded-tl-3xl rounded-br-3xl p-6 flex flex-col items-center text-center hover:bg-blue transition duration-300" onclick="window.open()">
+                <div class="bg-[#EAF4FB] w-full border rounded-tl-3xl rounded-br-3xl p-6 flex flex-col items-center text-center hover:bg-blue transition duration-300" onclick="window.open('http\://linkedin.com/in/veera-rama-teja-035a60236')">
                   <img src="SRC/Co-Founder.jpg" alt="Founder 1" class="rounded-full mb-4">
                   <h3 class="text-lg font-bold">Nalle veera rama teja </h3>
                   <p class="text-sm text-gray">Co - Founder</p>
                 </div>
                 <!-- Founder 2 Card -->
-                <div class="bg-dull w-full border rounded-tl-3xl rounded-br-3xl p-6 flex flex-col items-center text-center hover:bg-blue transition duration-300" onclick="window.open()">
-                  <img src="https://via.placeholder.com/100" alt="Founder 2" class="rounded-full mb-4">
-                  <h3 class="text-lg font-bold">Founder Name</h3>
-                  <p class="text-sm text-gray">Head of Product Development</p>
+                <div class="bg-[#EAF4FB] w-full border rounded-tl-3xl rounded-br-3xl p-6 flex flex-col items-center text-center hover:bg-blue transition duration-300" onclick="window.open('https\://www.linkedin.com/in/palvaimanojkumar/')">
+                  <img src="SRC/Co-Founder2.jpg" alt="Founder 2" class="rounded-full mb-4">
+                  <h3 class="text-lg font-bold">Palvai Manoj Kumar</h3>
+                  <p class="text-sm text-gray">Co - Founder</p>
                 </div>
               </div>
             </div>
-      
             <!-- Mission Section -->
             <div class="text-justify">
-              <h2 class="text-3xl font-bold mb-4 py-4 text-bunting-950">Our <span class="text-blue">MISSION</span></h2>
+              <h2 class="text-3xl font-bold mb-4 py-4 text-bunting-950">Our <span class="text-blue md:text-4xl">MISSION</span></h2>
               <p class="text-bunting-950 leading-relaxed">
                 At BrainBots, our mission is to make advanced robotics and AI education accessible to all students. We empower learners through hands-on experiences, expert in-person instruction, and free kits, ensuring that schools can offer quality STEM education at an affordable cost. We inspire students to engage in national and international competitions, fostering global leadership. Join us in revolutionizing education and preparing the innovators of tomorrow.
               </p>
             </div>
           </div>
-      
           <!-- Right Side for Larger Devices -->
           <div class="relative w-full md:w-[40%] lg:w-1/3 flex items-center justify-center hidden md:flex">
             <div class="absolute inset-0 bg-blue md:rounded-tl-full"></div>
             <h1 class="relative text-4xl font-bold text-bunting-950 p-8">ABOUT US</h1>
           </div>
         </div>
-
         <div class="w-[90%] ml-[10%] h-1 bg-blue"></div>
       </section>
       
-      
-
-
-      <section class="h-fit bg-[#EAF4FB] text-bunting-950 flex items-center justify-center">
-        <div class="w-full flex justify-center mx-60 my-20">
-          <div class="relative w-full max-w-[64%] aspect-[16/9]">
+      <section id="gallery" class="h-fit bg-white text-bunting-950 flex items-center justify-center">
+        <div class="w-full flex flex-col items-center justify-center py-20">
+          <div class="relative w-full md:max-w-[44%] max-w-[64%] aspect-[16/9]">
             <iframe
               class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-              src="https://www.youtube.com/embed/VIDEO_ID"
+              src="https://www.youtube.com/embed/WEZyz5UICq0"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
       
-      
-
-
       <section id="Contact" class="w-full bg-blue py-12 rounded-r-3xl mr-4 md:rounded-tr-full">
         <div class="text-center flex flex-col items-center justify-center md:flex md:flex-row">
           <!-- Heading Section -->
@@ -362,7 +390,7 @@
               <i class="lni lni-instagram"></i>
             </a>
             <!-- YouTube -->
-            <a href="#" class="text-white text-4xl social-icon transition-colors hover:text-bunting-950 duration-300">
+            <a href="www.youtube.com/@BRAINBOTS-INDIA" class="text-white text-4xl social-icon transition-colors hover:text-bunting-950 duration-300">
               <i class="lni lni-youtube"></i>
             </a>
             <!-- LinkedIn -->
@@ -374,58 +402,50 @@
       </section>
       
 
-      <footer class="bg-[#0a142c] text-white py-10 px-5">
-          <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 pl-28">
-            <!-- First Column -->
+      <footer class="bg-white text-bunting-950 py-10 px-5">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 pl-28">
+          <!-- First and Second Columns-->
+          <div class="md:col-span-2 flex items-start">
             <div>
-              <h4 class="text-xl font-bold mb-4">Address</h4>
-              <p class="flex items-start mb-4">
-                  <i class="lni lni-map-marker-5 mr-2 mt-1"></i>
-                Reg. Add: Brain Bots<br>
-                Hyderabad<br>
-                Telangana - 500035 (India)
-              </p>
-              <!--p class="flex items-start">
-                  <i class="lni lni-map-marker-5 mr-2 mt-1"></i>
-                Reg. Add: RoomsVital Automation Solutions<br>
-                Private Limited,<br>
-                Village: Nipania Bandh, East of Shiv<br>
-                Temple, Barauni, Begusarai<br>
-                Bihar - 851112 (India)
-              </!--p-->
+              <h4 class="text-xl font-bold mb-4">Get in touch</h4>
+              <img class="w-32 h-32" src="SRC/foot.svg" alt="logo">
             </div>
-      
-            <!-- Second Column -->
-            <div>
-              <h4 class="text-xl font-bold mb-4">Contact</h4>
-              <p class="flex items-center mb-4">
-                  <i class="lni lni-telephone-1 mr-2"></i>
-                +91 9876543210
+            <div class="ml-12">
+              <p class="flex items-center mt-8 mb-4">
+                <i class="lni lni-telephone-1 mr-2"></i>
+                +91 95055 63344 , +91 99514 58075
               </p>
-              <p class="flex items-center mb-4">
-                  <i class="lni lni-telephone-1 mr-2"></i>
-                +91 9876543210
+              <p class="flex items-center mb-4 hover:text-blue" onclick="window.open('https\://www.brainbots.in/')">
+                <i class="lni lni-globe-1 mr-2"></i>
+                brainbots.in
               </p>
-              <p class="flex items-center">
-                  <i class="lni lni-envelope-1 mr-2"></i>
+              <p class="flex items-center mb-4 hover:text-blue" onclick="window.open('https\://mail.google.com/mail/?view=cm&fs=1&to=brainbots.info@gmail.com&su=SUBJECT&body=BODY')">
+                <i class="lni lni-envelope-1 mr-2"></i>
                 brainbots.info@gmail.com
               </p>
-            </div>
-      
-            <!-- Third Column -->
-            <div>
-              <h4 class="text-xl font-bold mb-4">Navigation</h4>
-              <ul>
-                <li class="mb-2"><a href="#Home" class="hover:text-gray-400">Home</a></li>
-                <li class="mb-2"><a href="#Services" class="hover:text-gray-400">Services</a></li>
-                <li class="mb-2"><a href="#About" class="hover:text-gray-400">About Us</a></li>
-                <li class="mb-2"><a href="#Contact" class="hover:text-gray-400">Contact</a></li>
-              </ul>
+              <p class="flex items-start mb-4">
+                <i class="lni lni-map-marker-5 mr-2 mt-1"></i>
+                Brain Bots, 
+                Hyderabad,
+                Telangana - 500035 (India)
+              </p>
             </div>
           </div>
+      
+          <!-- Third Column -->
+          <div>
+            <h4 class="text-xl font-bold mb-4">Navigation</h4>
+            <ul>
+              <li class="mb-2"><a href="#Home" class="hover:text-blue">Home</a></li>
+              <li class="mb-2"><a href="#Services" class="hover:text-blue">Services</a></li>
+              <li class="mb-2"><a href="#About" class="hover:text-blue">About Us</a></li>
+              <li class="mb-2"><a href="#Contact" class="hover:text-blue">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
-
-
     </div>
 </body>
 </html>
+
+<!-- Developed by Himanshu Saxena -->
